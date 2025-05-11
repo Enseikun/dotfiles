@@ -1,5 +1,5 @@
 #!/bin/zsh
-# ~/.local/share/chezmoi/run_periodically_update-package-lists.sh
+# ~/.local/share/chezmoi/run_update-package-lists.sh
 
 set -eu
 
@@ -21,4 +21,11 @@ pacman -Qqem > "${PKGLIST_DIR}/pkglist_aur.txt"
 # 変更があればchezmoiに通知
 chezmoi add "${PKGLIST_DIR}/pkglist.txt" "${PKGLIST_DIR}/pkglist_aur.txt"
 
-echo "Package lists updated successfully at $(date)"
+# 変更を自動的にコミット
+if [ -d "${SOURCE_DIR}/.git" ]; then
+  echo "コミットをGitリポジトリに追加しています..."
+  (cd "${SOURCE_DIR}" && git add "${PKGLIST_DIR#$SOURCE_DIR/}/pkglist.txt" "${PKGLIST_DIR#$SOURCE_DIR/}/pkglist_aur.txt" && git commit -m "パッケージリストを更新 $(date +%Y-%m-%d)" || echo "コミットする変更がありませんでした")
+  echo "変更がGitリポジトリにコミットされました"
+fi
+
+echo "Package lists updated successfully at $(date)" 
