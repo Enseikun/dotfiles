@@ -1,0 +1,37 @@
+[colors]
+#save_to_clipboard = true
+
+[colors.bright]
+black = "#666666"
+blue = "#44a6e0"
+cyan = "#68f2e8"
+green = "#57c98d"
+magenta = "#ff65a3"
+red = "#ff4757"
+white = "#ffffff"
+yellow = "#fff08f"
+
+[colors.normal]
+black = "#333333"
+blue = "#1793d1"
+cyan = "#42d4f4"
+green = "#3cb44b"
+magenta = "#f032e6"
+red = "#e6194b"
+white = "#ffffff"
+yellow = "#ffe119"
+
+[colors.primary]
+background = "#333333"
+foreground = "#ffffff"
+
+[font.normal]
+family = "MesloLGS NF"
+
+[window]
+dynamic_title = true
+opacity = 0.9
+
+[window.padding]
+x = 8
+y = 4

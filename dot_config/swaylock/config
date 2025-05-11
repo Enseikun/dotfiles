@@ -1,0 +1,196 @@
+#swaylock-effects
+
+#
+#color
+#
+
+#INSIDE='#33333350'
+#GRAY='#333333'
+#RED='#e6194b'
+#GREEN='#3cb44b'
+#YELLOW='#ffe119'
+#BLUE='#1793d1'
+#MAGENTA='#f032e6'
+#CYAN='#42d4f4'
+
+#
+#swaylock
+#
+
+#アンロックインジケータの無効化
+#no-unlock-indicator
+
+#インジケータの常時表示
+indicator
+
+#インジケータに時計を表示
+clock
+
+#インジケータの時計の時間形式設定
+timestr=%H:%M
+
+#インジケータの時計の日付形式設定
+datestr=%Y/%m/%d
+
+#指定した画像の表示
+#image [[]:]
+
+#スクリーンショットの表示
+screenshots
+
+#入力中のxkbレイアウトの表示
+#show-keyboard-layout
+
+#入力中のxkbレイアウトの強制非表示
+#hide-keyboard-layout
+
+#Caps Lockのテキストの無効化
+#disable-caps-lock-text
+
+#インジケータにCaps Lockの状態を表示
+indicator-caps-lock
+
+#画像のスケーリングモード設定
+#scaling
+
+#画像のタイリング設定
+#tiling
+
+#画面の色設定<rrggbb[aa]>
+#color=000000b3 
+
+#バックスペースのハイライトセグメントの色設定
+#bs-hl-color <rrggbb[aa]>
+
+#Caps Lockがアクティブなときのバックスペースのハイライトセグメントの色設定
+#caps-lock-bs-hl-color <rrggbb[aa]>
+
+#Caps Lockがアクティブなときのキープレスのハイライトセグメントの色設定
+#caps-lock-key-hl-color <rrggbb[aa]>
+
+#テキストのフォント設定
+#font
+
+#インジケータテキストの固定フォントサイズ設定
+#font-size
+
+#アイドル状態でもインジケータを表示する設定
+indicator-idle-visible
+
+#インジケータの半径設定
+indicator-radius=120
+
+#インジケータの厚さ設定
+indicator-thickness=12
+
+#インジケータの水平位置設定
+#indicator-x-position
+
+#インジケータの垂直位置設定
+#indicator-y-position
+
+#インジケータの内側の色設定<rrggbb[aa]>
+inside-color=000000b3
+
+#クリア時のインジケータの内側の色設定<rrggbb[aa]>
+inside-clear-color=000000b3
+
+#Caps Lockがアクティブなときのインジケータの内側の色設定<rrggbb[aa]>
+inside-caps-lock-color=000000b3
+
+#認証中のインジケータの内側の色設定<rrggbb[aa]>
+inside-ver-color=000000b3
+
+#無効なときのインジケータの内側の色設定<rrggbb[aa]>
+inside-wrong-color=000000b3
+
+#キープレスのハイライトセグメントの色設定<rrggbb[aa]>
+key-hl-color=ffe119
+
+#レイアウトテキストを含むボックスの背景色設定
+#layout-bg-color <rrggbb[aa]>
+
+#レイアウトテキストを含むボックスの境界線の色設定
+#layout-border-color <rrggbb[aa]>
+
+#レイアウトテキストの色設定<rrggbb[aa]>
+#layout-text-color=ffe119
+
+#インジケータの内側とリングの間の線の色設定
+#line-color <rrggbb[aa]>
+
+#クリア時のインジケータの内側とリングの間の線の色設定
+#line-clear-color <rrggbb[aa]>
+
+#Caps Lockがアクティブなときのインジケータの内側とリングの間の線の色設定
+#line-caps-lock-color <rrggbb[aa]>
+
+#認証中のインジケータの内側とリングの間の線の色設定
+#line-ver-color <rrggbb[aa]>
+
+#無効なときのインジケータの内側とリングの間の線の色設定
+#line-wrong-color <rrggbb[aa]>
+
+#インジケータの内側とリングの間の線の色に内側の色を使用する設定
+line-uses-inside
+
+#インジケータの内側とリングの間の線の色にリングの色を使用する設定
+#line-uses-ring
+
+#入力中またはアイドル状態のときのインジケータのリングの色設定<rrggbb[aa]>
+ring-color=1793d1
+
+#クリア時のインジケータのリングの色設定<rrggbb[aa]>
+ring-clear-color=ffe119
+
+#Caps Lockがアクティブなときのインジケータのリングの色設定<rrggbb[aa]>
+ring-caps-lock-color=f032e6
+
+#認証中のインジケータのリングの色設定<rrggbb[aa]>
+ring-ver-color=1793d1
+
+#無効なときのインジケータのリングの色設定<rrggbb[aa]>
+ring-wrong-color=e6194b
+
+#ハイライトセグメントを分割する線の色設定<rrggbb[aa]>
+separator-color=000000b3
+
+#テキストの色設定<rrggbb[aa]>
+text-color=1793d1
+
+#クリア時のテキストの色設定<rrggbb[aa]>
+text-clear-color=ffe119
+
+#Caps Lockがアクティブなときのテキストの色設定<rrggbb[aa]>
+text-caps-lock-color=f032e6
+
+#認証中のテキストの色設定<rrggbb[aa]>
+text-ver-color=1793d1
+
+#無効なときのテキストの色設定<rrggbb[aa]>
+text-wrong-color=e6194b
+
+#表示される画像をぼかす設定
+effect-blur=7x5
+
+#表示される画像をピクセル化する設定
+#effect-pixelate
+
+#画像を指定した倍率でスケールする設定
+#effect-scale=0.4
+
+#表示される画像をグレースケールにする設定
+#effect-greyscale
+
+#画像にビネット効果を適用する設定
+#effect-vignette=0.1:0.1:0.1:0.1:0
+effect-vignette=0.1:0.2
+
+#他の画像をロック画面にオーバーレイする設定
+#effect-compose ;;;
+
+#共有オブジェクトからカスタムエフェクトをロードする設定
+#effect-custom
+
+#各エフェクトを実行するのにかかる時間を測定する設定
+#time-effects
