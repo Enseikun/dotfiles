@@ -1,0 +1,17 @@
+1password
+chatgpt-desktop-bin
+clipman
+cursor-appimage
+figma-linux-bin
+google-chrome
+gotop
+librewolf-bin
+light
+notion-app
+sengi-appimage
+siki
+slack-desktop
+spotify
+swaylock-effects
+visual-studio-code-bin
+yay
