@@ -49,10 +49,78 @@
         },
         {
             "before": [
-                "U"
+                "x"
             ],
             "after": [
+                "\"_x"
+            ]
+        },
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "\"_s"
+            ]
+        },
+        {
+            "before": [
                 "u"
+            ],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "*"
+            ],
+            "after": [
+                "*",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "#"
+            ],
+            "after": [
+                "#",
+                "z",
+                "z"
             ]
         }
     ],
@@ -83,6 +151,22 @@
         },
         {
             "before": [
+                "x"
+            ],
+            "after": [
+                "\"_x"
+            ]
+        },
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "\"_s"
+            ]
+        },
+        {
+            "before": [
                 "C"
             ],
             "after": [
@@ -91,19 +175,65 @@
         },
         {
             "before": [
+                "u"
+            ],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": [
                 "U"
             ],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
             "after": [
-                "u"
+                "n",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "*"
+            ],
+            "after": [
+                "*",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "#"
+            ],
+            "after": [
+                "#",
+                "z",
+                "z"
             ]
         }
     ],
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
     "git.suggestSmartCommit": false,
     "git.ignoreRebaseWarning": true,
     "[novel]": {},
@@ -135,18 +265,46 @@
     "workbench.editor.empty.hint": "hidden",
     "workbench.tree.indent": 21,
     "workbench.editor.pinnedTabsOnSeparateRow": true,
-    "explorer.fileNesting.patterns": {
-        "*.ts": "${capture}.js",
-        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-        "*.jsx": "${capture}.js",
-        "*.tsx": "${capture}.ts",
-        "tsconfig.json": "tsconfig.*.json",
-        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
-        "*.sqlite": "${capture}.${extname}-*",
-        "*.db": "${capture}.${extname}-*",
-        "*.sqlite3": "${capture}.${extname}-*",
-        "*.db3": "${capture}.${extname}-*",
-        "*.sdb": "${capture}.${extname}-*",
-        "*.s3db": "${capture}.${extname}-*"
-    }
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#FFE119",
+        "statusBar.foreground": "#000000",
+        "statusBarItem.remoteBackground": "#E6194B",
+        "statusBarItem.remoteForeground": "#FFFFFF",
+        "statusBar.noFolderBackground": "#FFE119",
+        "statusBar.debuggingBackground": "#FFE119",
+        "statusBar.debuggingForeground": "#000000"
+    },
+    "vim.statusBarColors.normal": [
+        "#3CB44B",
+        "#FFFFFF"
+    ],
+    "vim.statusBarColors.insert": [
+        "#E6194B",
+        "#FFFFFF"
+    ],
+    "vim.statusBarColors.visual": [
+        "#FFE119",
+        "#000000"
+    ],
+    "vim.statusBarColors.visualline": [
+        "#FFE119",
+        "#000000"
+    ],
+    "vim.statusBarColors.visualblock": [
+        "#FFE119",
+        "#000000"
+    ],
+    "vim.statusBarColors.replace": [
+        "#F97316",
+        "#FFFFFF"
+    ],
+    "vim.statusBarColors.commandlineinprogress": [
+        "#1793D1",
+        "#FFFFFF"
+    ],
+    "vim.statusBarColors.searchinprogress": [
+        "#1793D1",
+        "#FFFFFF"
+    ]
 }
