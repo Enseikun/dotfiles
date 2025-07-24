@@ -1,0 +1,152 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.inlineSuggest.enabled": true,
+    "editor.fontFamily": "Consolas, 'MesloLGS NF', monospace",
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "c"
+            ],
+            "after": [
+                "\"_c"
+            ]
+        },
+        {
+            "before": [
+                "C"
+            ],
+            "after": [
+                "\"_C"
+            ]
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "after": [
+                "u"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "c"
+            ],
+            "after": [
+                "\"_c"
+            ]
+        },
+        {
+            "before": [
+                "C"
+            ],
+            "after": [
+                "\"_C"
+            ]
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "after": [
+                "u"
+            ]
+        }
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "git.suggestSmartCommit": false,
+    "git.ignoreRebaseWarning": true,
+    "[novel]": {},
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "scminput",
+        "novel"
+    ],
+    "workbench.editor.enablePreview": false,
+    "markdown-preview-enhanced.enablePreviewZenMode": false,
+    "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
+    "markdown-preview-enhanced.revealjsTheme": "black.css",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.tree.indent": 21,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    }
+}
