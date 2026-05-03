@@ -258,6 +258,10 @@ bindsym $mod+Shift+f exec ~/.config/sway/maximize_floating_window.sh
     #auto layout(horizontal)
     # Set the default split direction to horizontal
     default_orientation horizontal
+
+    #Mako notification controls
+    bindsym $mod+Shift+n exec makoctl restore
+    bindsym $mod+Shift+d exec makoctl dismiss --all
 #
 # Status Bar:
 #
@@ -275,6 +279,7 @@ bindsym $mod+Shift+f exec ~/.config/sway/maximize_floating_window.sh
 #        inactive_workspace #32323200 #32323200 #5c5c5c
 #    }
 #}
+
 bar {
 	swaybar_command waybar
 }
@@ -290,35 +295,40 @@ exec fcitx5
 
 #window gap
 set $gaps_inner_default 4
-set $gaps_outer_default 1
+set $gaps_outer_default 4
 gaps inner $gaps_inner_default
 gaps outer $gaps_outer_default
 
-#window(remove title bar & set opacity)
-# for_window [app_id="^.*"] {
-#     border pixel 3
-#     opacity 1.0
-# }
+#swayfx
+blur enable
+blur_passes 3
+blur_radius 3
+# default_dim_inactive 0.6
 
-for_window [class="Flet"] {
-    focus
-#exec {
-#        new_workspace=$(swaymsg -t get_workspaces | jq -r '.[] | .num' | sort -rn | head -n 1 | xargs -I {} expr {} + 1)
-#        swaymsg move container to workspace $new_workspace
-#    }
-    move container to workspace back_and_forth
+layer_effects "waybar" {
+    blur enable;
 }
 
+layer_effects "wofi" {
+    blur enable;
+}
+
+layer_effects "notifications" {
+    blur enable;
+    shadows enable;
+}
+
+#window(remove title bar & set opacity)
 for_window [app_id="^.*"] {
-    border pixel 3
+    border pixel 2
 }
 
 #apps
 for_window [app_id="(?i)thunar"] floating enable
-for_window [class="obsidian"] opacity 0.7
+for_window [class="obsidian"] opacity 0.8
+#for_window [app_id="Alacritty"] opacity 0.5
 #for_window [class="Cursor"] opacity 0.7
 #for_window [app_id="(?i)LibreWolf"] opacity 1.0
-
 
 #window theme colors
 set $fc #1793d1
