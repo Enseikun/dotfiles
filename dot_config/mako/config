@@ -10,13 +10,15 @@ sort=-time
 #
 
 layer=overlay
-#background-color=#333333
-background-color=#666666
+background-color=#3333331A
 width=320
-height=60
-border-size=4
-#border-color=#3cb44b
-border-color=#ffffff
+height=72
+
+padding=6
+margin=8
+outer-margin=1
+
+border-size=2
 border-radius=2
 icons=1
 max-icon-size=64
@@ -25,7 +27,7 @@ default-timeout=5000
 max-visible=1
 font=MesloLGS NF 12
 text-color=#ffffff
-anchor=bottom-center
+anchor=top-center
 
 [urgency=low]
 border-color=#3cb44b
@@ -36,7 +38,6 @@ border-color=#1793d1
 default-timeout=5000
 
 [urgency=high]
-#background-color=#e6194bb3
 border-color=#e6194b
 default-timeout=0
 
@@ -44,18 +45,7 @@ default-timeout=0
 ## app setting:
 #
 
-[app-name=Spotify]
-default-timeout=5000
-border-color=#1DB954
-text-color=#ffffff
-background-color=#191414
-
-#[app-mane=Blueman]
-#default-timeout=5000
-
-#[app-name=Vivaldi]
-
-#[app-name=Thunderbird]
+#[app-name=Spotify]
 
 #
 ## test::
