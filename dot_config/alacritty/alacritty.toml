@@ -22,7 +22,8 @@ white = "#ffffff"
 yellow = "#ffe119"
 
 [colors.primary]
-background = "#333333"
+#background = "#333333"
+background = "#000000"
 foreground = "#ffffff"
 
 [font.normal]
@@ -30,7 +31,7 @@ family = "MesloLGS NF"
 
 [window]
 dynamic_title = true
-opacity = 0.9
+opacity = 0.3
 
 [window.padding]
 x = 8
